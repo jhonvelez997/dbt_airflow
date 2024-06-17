@@ -1,0 +1,4 @@
+version: 2
+tests:
+  name: compare_totals
+  description: "Esta prueba de dbt compara el total de una métrica calculada en el modelo 'country_count' con el total de otra métrica calculada en el modelo 'gender_count'. Si los totales son iguales, la prueba aprueba y devuelve 0. Si los totales son diferentes, la prueba falla y devuelve 1. Esto permite validar la consistencia de los datos entre dos modelos diferentes y asegurar que los cálculos realizados en ambos modelos producen resultados coherentes."

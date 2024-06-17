@@ -1,0 +1,22 @@
+version: 2
+models:
+  - name: gender_count
+    description: "Este código está escrito en el lenguaje de plantillas Jinja, comúnmente utilizado en herramientas de ingeniería de datos como dbt (Data Build Tool). Está diseñado para manejar la carga incremental de datos, donde los nuevos datos se agregan a un conjunto de datos existente basado en una clave única (gender en este caso). Primero, verifica si se está ejecutando en modo incremental, y luego recupera los datos existentes o crea un conjunto de datos vacío. Después, obtiene los nuevos datos de la tabla RAW_USER_DATA, agrupándolos por GENDER y contando las filas. Luego, combina los datos nuevos y existentes mediante una operación UNION ALL, agrupa por GENDER y calcula la suma de los totales. Finalmente, selecciona todas las columnas del conjunto de datos final, que contiene los datos combinados con los totales actualizados para cada grupo de género."
+    columns:
+      - name: gender
+        description: "Columna con los generos unicos"
+      - name: total
+        description: "Columna con el Conteo incremental de los totales"
+
+  - name: country_count
+    description: "Este código en Jinja maneja la carga incremental de datos, donde los nuevos datos se agregan a un conjunto de datos existente basado en la clave única 'country'. Primero, verifica el modo de ejecución y obtiene los datos existentes o crea un conjunto vacío. Luego, obtiene los nuevos datos de 'RAW_USER_DATA', los agrupa por 'country' y cuenta las filas. Combina los datos nuevos y existentes, agrupa por 'country', calcula la suma de los totales y finalmente selecciona las columnas del conjunto de datos final con los totales actualizados por país."
+    columns:
+      - name: country
+        description: "Columna con los Paises Unicos"
+      - name: total
+        description: "Columna con el conteo total incremental"
+  - name: total_users
+    description: "Tabla creada con codigo para comparar el conteo de los modelos gender_cunt y country_count"
+    columns:
+      - name: total_people
+        description: "Columna Numerica con el conteo total de registros procesados."

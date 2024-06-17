@@ -1,0 +1,49 @@
+                     List of relations
+ Schema |              Name              | Type  |  Owner   
+--------+--------------------------------+-------+----------
+ public | ab_permission                  | table | postgres
+ public | ab_permission_view             | table | postgres
+ public | ab_permission_view_role        | table | postgres
+ public | ab_register_user               | table | postgres
+ public | ab_role                        | table | postgres
+ public | ab_user                        | table | postgres
+ public | ab_user_role                   | table | postgres
+ public | ab_view_menu                   | table | postgres
+ public | alembic_version                | table | postgres
+ public | astro_available_version        | table | postgres
+ public | astro_version_check            | table | postgres
+ public | callback_request               | table | postgres
+ public | connection                     | table | postgres
+ public | dag                            | table | postgres
+ public | dag_code                       | table | postgres
+ public | dag_owner_attributes           | table | postgres
+ public | dag_pickle                     | table | postgres
+ public | dag_run                        | table | postgres
+ public | dag_run_note                   | table | postgres
+ public | dag_schedule_dataset_reference | table | postgres
+ public | dag_tag                        | table | postgres
+ public | dag_warning                    | table | postgres
+ public | dagrun_dataset_event           | table | postgres
+ public | dataset                        | table | postgres
+ public | dataset_dag_run_queue          | table | postgres
+ public | dataset_event                  | table | postgres
+ public | import_error                   | table | postgres
+ public | job                            | table | postgres
+ public | log                            | table | postgres
+ public | log_template                   | table | postgres
+ public | rendered_task_instance_fields  | table | postgres
+ public | serialized_dag                 | table | postgres
+ public | session                        | table | postgres
+ public | sla_miss                       | table | postgres
+ public | slot_pool                      | table | postgres
+ public | task_fail                      | table | postgres
+ public | task_instance                  | table | postgres
+ public | task_instance_note             | table | postgres
+ public | task_map                       | table | postgres
+ public | task_outlet_dataset_reference  | table | postgres
+ public | task_reschedule                | table | postgres
+ public | trigger                        | table | postgres
+ public | variable                       | table | postgres
+ public | xcom                           | table | postgres
+(44 rows)
+

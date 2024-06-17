@@ -1,0 +1,8 @@
+name: 'file_2_snow'
+profile: file_2_snow
+models:
+  file_2_snow:
+    materialized: table
+# create a variable called country_code and give it the default value "FR" (for France)
+vars:
+  country_code: "FR"
